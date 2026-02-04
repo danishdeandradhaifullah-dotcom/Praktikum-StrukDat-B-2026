@@ -1,0 +1,1 @@
+print ("I am", 18, "Years old")
