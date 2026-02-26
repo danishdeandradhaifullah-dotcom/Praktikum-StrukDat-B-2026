@@ -1,3 +1,4 @@
+#LISTS
 mylist = ['Demoralize', 'Ego', 'Hinata', 'Staple', 'Laufey', 'Dragon']
 print(mylist) # printing the list you made
 print("The list length is", len(mylist)) # how to check the length of the list
@@ -58,10 +59,13 @@ while a < len(_list): # and also while
 #List comprehension
 List = ["Hades", 'Zeus', 'Hera', 'Aphrodite', 'Artemis']
 ListNew = []
+ListThird = []
 
 for b in List:
   if "s" in b: # if an element of the list contains an "s" it will append it to the new list  
     ListNew.append(b)
+
+ListThird = [c for c in List if "s" in c]
 
 NewerList = [b.upper() for b in List] # .upper to make stuff uppercase
 
