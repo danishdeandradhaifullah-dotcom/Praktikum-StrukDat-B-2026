@@ -3,11 +3,22 @@ mahasiswa = {
 "A002": {"nama": "Siti", "prodi": "Sistem Informasi", "ipk": 3.20},
 "A003": {"nama": "Andi", "prodi": "Informatika", "ipk": 3.75} } 
 
-print(mahasiswa["A003"]["ipk"])
 
-ipk1 = 3.45
-ipk2 = 3.20
-ipk3 = 3.75
+mahasiswa['004'] = {
+    'nama' : 'Dina',
+    'prodi' : 'Informatika',
+    'ipk' : 3.8
+}
 
-rataIPK = (ipk1 + ipk2 + ipk3) / 3
-print(rataIPK)
+total = 0
+
+for nim, data in mahasiswa.items():
+    if data['ipk'] > 3.5:
+        print(data['nama'])
+
+for nim,data in mahasiswa.items():
+    total += data['ipk']
+
+rata_rata = total / len(mahasiswa)
+print(rata_rata)
+
